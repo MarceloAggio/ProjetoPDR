@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <style>
+        /* General styles */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            color: #592014;
+            background-color: #D98859;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* General styles end*/
+        header {
+            background-color: #8C310F;
+        }
+
+        .container {
+            max-width: 98rem;
+            margin-inline: auto;
+            padding-inline: 1.5rem;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-block: 1.5rem;
+        }
+
+        .nav-list {
+            position: relative;
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            min-width: 10rem;
+            text-align: center;
+            padding-block: 1rem;
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+        }
+
+        .active {
+            position: absolute;
+            bottom: -1rem;
+            height: 2px;
+            width: 10rem;
+            background-color: #fff;
+            transition: transform 0.25s;
+        }
+
+        .nav-item:nth-child(2):hover~.active {
+            transform: translateX(10rem);
+        }
+
+        .nav-item:nth-child(3):hover~.active {
+            transform: translateX(20rem);
+        }
+
+        .nav-item:nth-child(4):hover~.active {
+            transform: translateX(30rem);
+        }
+
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-color: black;
+        }
+
+        .subTitulo {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        i {
+            padding-top: 18px;
+            font-size: 82px;
+        }
+
+        .cards {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .card {
+            width: 90%;
+            height: 380px;
+            border-radius: 10%;
+            background-color: #F24405;
+            color: black;
+            text-align: center;
+        }
+
+        .tituloCard {
+            margin-top: 10px;
+        }
+
+        .descricao {
+            margin-top: 40px;
+        }
+
+        .btn-card {
+            margin: 30px 0;
+        }
+
+        .pt2 {
+            width: 90%;
+            height: 450px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .desc-sobre {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .img-sobre {
+            margin: 0 auto;
+            width: 90%;
+            height: 90%;
+            background-color: black;
+        }
+
+        .titulo-sobre {
+            color: black;
+            margin: 10px 0 0 0;
+            text-align: center;
+        }
+
+        .text-sobre {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .formContato{
+            background-color: grey;
+            border-radius: 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .section_form{
+            margin: 0 auto;
+        }
+
+        .feed-form {
+            margin-top: 36px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .feed-form input {
+            height: 54px;
+            border-radius: 5px;
+            background: white;
+            margin-bottom: 15px;
+            border: none;
+            padding: 0 20px;
+            font-weight: 300;
+            font-size: 14px;
+            color: #4B4B4B;
+        }
+
+        .button_submit:hover,
+        .feed-form input:hover {
+            transform: scale(1.009);
+            box-shadow: 0px 0px 3px 0px #212529;
+        }
+
+        .button_submit {
+            margin: 0 auto;
+            width: 50%;
+            height: 54px;
+            font-size: 14px;
+            color: white;
+            background: #F24405;
+            border-radius: 5px;
+            border: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        footer{
+            text-align: center;
+            margin-top: 30px;
+            background-color: black;
+            color: white;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="nav-link">LOGO</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">DOAÇÕES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BAZAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTATO</a>
+                </li>
+                <div class="active"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <h1>Banner</h1>
+        </div>
+    </main>
+
+    <section>
+        <h2 class="subTitulo">COMO AJUDAR</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3 class="tituloCard">DOAÇÃO</h3>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+
+                <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officiis, neque
+                    veritatis sequi aspernatur debitis iure suscipit ab, quas iste deserunt reiciendis porro. Deserunt
+                    culpa impedit molestias libero asperiores sed fawrafa?</p>
+
+                <button class="btn-card">Botão</button>
+            </div>
+
+            <div class="card">
+                <h3 class="tituloCard">COMPRE</h3>
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit officiis molestias,
+                    quam, dignissimos a, quasi odio ad dolore molestiae fugit ipsa dolorum sequi rerum iusto doloremque
+                    reprehenderit vitae nesciunt aliquid?</p>
+
+                <button class="btn-card">Botão</button>
+            </div>
+
+            <div class="card">
+                <h3 class="tituloCard">COMPARTILHE</h3>
+                <i class="fa-solid fa-share"></i>
+
+                <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eligendi a
+                    quia fugit veritatis? Blanditiis autem fuga hic eveniet, vero odit temporibus veniam voluptas nam,
+                    quisquam est ipsum reiciendis rem.</p>
+
+                <button class="btn-card">Botão</button>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h2 class="subTitulo">QUEM SOMOS?</h2>
+
+        <div class="pt2">
+
+            <div class="img-sobre">
+                IMG SOBRE - GALERIA DE FOTOS
+            </div>
+            <div class="desc-sobre">
+                <h3 class="titulo-sobre">NOSSA HISTORIA</h3>
+
+                <p class="text-sobre">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum suscipit laborum
+                    dolor harum architecto facilis voluptates dicta minus nihil voluptas dolorem blanditiis, perferendis
+                    corrupti id a voluptatem quos amet corporis! Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit. Ducimus eius illo repellendus ipsam accusantium et quasi molestiae reiciendis odit rerum quae
+                    praesentium nisi magnam voluptatibus earum facere, tenetur numquam fugit? Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Saepe commodi cumque quidem mollitia eum debitis quod beatae eos
+                    deleniti, incidunt id voluptatum temporibus ducimus quos ad. Est ut tenetur sint. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Consequuntur, reiciendis! Laudantium molestiae odit, tempore
+                    nisi nulla deleniti enim repudiandae quam alias officia est iusto quis cupiditate, explicabo sunt
+                    corrupti nesciunt. etc...</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="subTitulo">CONTATO</h2>
+
+        <div class="formContato">
+
+            <div class="section_form">
+                <form id="consultation-form" class="feed-form" action="#">
+                    <input required="" placeholder="Name" type="text">
+                    <input name="phone" required="" placeholder="Phone number">
+                    <input name="email" required="" placeholder="E-mail" type="email">
+                    <button class="button_submit">ORDER</button>
+                </form>
+            </div>
+            <div class="redes">
+                redes sociais       
+            </div>
+            
+        </div>
+
+    </section>
+
+    <footer>
+        <h2>Desenvolvido por Marcelo Aggio</h2>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a342c01441.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
