@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundação - Pequeninos do Rei</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -26,8 +26,6 @@
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 1.6rem;
-            color: #592014;
-            background-color: #D98859;
         }
 
         a {
@@ -38,6 +36,7 @@
         /* General styles end*/
         header {
             background-color: #8C310F;
+            color: #fff;
         }
 
         .container {
@@ -109,12 +108,13 @@
         .cards {
             width: 80%;
             margin: 20px auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+            justify-content: space-around;
         }
 
         .card {
             width: 90%;
+            margin: 0 10px;
             height: 380px;
             border-radius: 10%;
             background-color: #F24405;
@@ -164,17 +164,17 @@
             margin-top: 30px;
             text-align: center;
         }
-
         .formContato{
             background-color: grey;
-            border-radius: 5%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-around;
             width: 90%;
             margin: 0 auto;
         }
-        .section_form{
-            margin: 0 auto;
+        .formContato h2{
+            margin-top: 15px;
+            text-align: center;
         }
 
         .feed-form {
@@ -260,7 +260,7 @@
         <div class="cards">
 
             <div class="card">
-                <h3 class="tituloCard">DOAÇÃO</h3>
+                <h3 class="tituloCard">DOE</h3>
                 <i class="fa-solid fa-hand-holding-dollar"></i>
 
                 <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officiis, neque
@@ -322,22 +322,22 @@
 
     </section>
 
-    <section>
+    <section class="contatos">
 
         <h2 class="subTitulo">CONTATO</h2>
 
         <div class="formContato">
-
             <div class="section_form">
+                <h2>Envie Uma Mensagem</h2>       
                 <form id="consultation-form" class="feed-form" action="#">
                     <input required="" placeholder="Name" type="text">
                     <input name="phone" required="" placeholder="Phone number">
                     <input name="email" required="" placeholder="E-mail" type="email">
-                    <button class="button_submit">ORDER</button>
+                    <button class="button_submit">Enviar</button>
                 </form>
             </div>
             <div class="redes">
-                redes sociais       
+                <h2>Entre em contato Conosco</h2>       
             </div>
             
         </div>
