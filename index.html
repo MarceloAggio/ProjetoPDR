@@ -8,280 +8,76 @@
     <title>Fundação - Pequeninos do Rei</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,400&display=swap" rel="stylesheet">
 
-    <style>
-        /* General styles */
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 62.5%;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.6rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* General styles end*/
-        header {
-            background-color: #8C310F;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 98rem;
-            margin-inline: auto;
-            padding-inline: 1.5rem;
-        }
-
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-block: 1.5rem;
-        }
-
-        .nav-list {
-            position: relative;
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-item {
-            min-width: 10rem;
-            text-align: center;
-            padding-block: 1rem;
-        }
-
-        .nav-link {
-            text-transform: uppercase;
-        }
-
-        .active {
-            position: absolute;
-            bottom: -1rem;
-            height: 2px;
-            width: 10rem;
-            background-color: #fff;
-            transition: transform 0.25s;
-        }
-
-        .nav-item:nth-child(2):hover~.active {
-            transform: translateX(10rem);
-        }
-
-        .nav-item:nth-child(3):hover~.active {
-            transform: translateX(20rem);
-        }
-
-        .nav-item:nth-child(4):hover~.active {
-            transform: translateX(30rem);
-        }
-
-        .banner {
-            width: 100%;
-            height: 400px;
-            background-color: black;
-        }
-
-        .subTitulo {
-            margin: 30px 0;
-            text-align: center;
-        }
-
-        i {
-            padding-top: 18px;
-            font-size: 82px;
-        }
-
-        .cards {
-            width: 80%;
-            margin: 20px auto;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .card {
-            width: 90%;
-            margin: 0 10px;
-            height: 380px;
-            border-radius: 10%;
-            background-color: #F24405;
-            color: black;
-            text-align: center;
-        }
-
-        .tituloCard {
-            margin-top: 10px;
-        }
-
-        .descricao {
-            margin-top: 40px;
-        }
-
-        .btn-card {
-            width: 40%;
-            height: 30px;
-            background-color: #8C310F;
-            color: white;
-            border: 2px solid black;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
-
-        .pt2 {
-            width: 90%;
-            height: 450px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .desc-sobre {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        .img-sobre {
-            margin: 0 auto;
-            width: 90%;
-            height: 90%;
-            background-color: black;
-        }
-
-        .titulo-sobre {
-            color: black;
-            margin: 10px 0 0 0;
-            text-align: center;
-        }
-
-        .text-sobre {
-            margin-top: 30px;
-            text-align: center;
-        }
-        
-
-        .feed-form input {
-            height: 54px;
-            border-radius: 5px;
-            background: white;
-            margin-bottom: 15px;
-            border: none;
-            padding: 0 20px;
-            font-weight: 300;
-            font-size: 14px;
-            color: #4B4B4B;
-        }
-
-        .button_submit:hover,
-        .feed-form input:hover {
-            transform: scale(1.009);
-            box-shadow: 0px 0px 3px 0px #212529;
-        }
-
-        .button_submit {
-            margin: 0 auto;
-            width: 50%;
-            height: 54px;
-            font-size: 14px;
-            color: white;
-            background: #F24405;
-            border-radius: 5px;
-            border: none;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        footer{
-            text-align: center;
-            margin-top: 30px;
-            background-color: black;
-            color: white;
-            height: 80px;
-        }
-    </style>
+    
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar container">
-            <a href="index.html" class="nav-link">LOGO</a>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">DOAÇÕES</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">BAZAR</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">CONTATO</a>
-                </li>
-                <div class="active"></div>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="banner">
-            <h1>Banner</h1>
-        </div>
-    </main>
-
-    <section>
-        <h2 class="subTitulo">COMO AJUDAR</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3 class="tituloCard">DOE</h3>
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-
-                <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim officiis, neque
-                    veritatis sequi aspernatur debitis iure suscipit ab, quas iste deserunt reiciendis porro. Deserunt
-                    culpa impedit molestias libero asperiores sed fawrafa?</p>
-
-                <button class="btn-card">Botão</button>
+    <section class="section-one">
+        <header class="menu-bg"> <!--header menu do site-->
+            <div class="menu">
+              <div class="menu-logo">
+                <a href="#">LOGO</a>
+              </div>
+              <div class="menu-direito">
+                <nav class="menu-nav">
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#doacoes">Doações</a></li>
+                    <li><a href="#bazar">Bazar</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <div class="active"></div>
+                  </ul>
+                </nav>
+                <div class="menu-entrar">
+                  <a id="criar"  href="#"><i class="fa-solid fa-heart" style="color: #000000;"></i> Fazer doação</a>
+                </div>
+              </div>
             </div>
-
-            <div class="card">
-                <h3 class="tituloCard">COMPRE</h3>
-                <i class="fa-solid fa-bag-shopping"></i>
-
-                <p class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit officiis molestias,
-                    quam, dignissimos a, quasi odio ad dolore molestiae fugit ipsa dolorum sequi rerum iusto doloremque
-                    reprehenderit vitae nesciunt aliquid?</p>
-
-                <button class="btn-card">Botão</button>
+          </header>
+          
+          <div class="intro">
+            <h2>Faça parte da diferença</h2>
+            <h1>Com uma pequena ajuda podemos contruir um mundo melhor</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aut voluptate illo pariatur temporibus. Mollitia, est dignissimos pariatur ipsa vel !</h3>
+            <div class="button-side">
+              <a id="button2"  href="#"><i class="fa-solid fa-heart" style="color: #f13f3f;"></i> Fazer doação</a>
             </div>
-
-            <div class="card">
-                <h3 class="tituloCard">COMPARTILHE</h3>
-                <i class="fa-solid fa-share"></i>
-
-                <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eligendi a
-                    quia fugit veritatis? Blanditiis autem fuga hic eveniet, vero odit temporibus veniam voluptas nam,
-                    quisquam est ipsum reiciendis rem.</p>
-
-                <button class="btn-card">Botão</button>
-            </div>
-
-        </div>
+          </div>
     </section>
+
+    <section class="section-ajudar">
+
+      <div class="div-card">
+        <div class="card card01">
+          <div class="teste">
+            <img src="img/icons8-doação-100.png" alt="">
+            <h3>Realize a sua contribuição</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+        </div>
+
+        <div class="card card02">
+          <img src="img/icons8-centro-de-compras-100.png" alt="">
+          <h3>compre algum produto da ONG</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+        </div>
+
+        <div class="card card03">
+          <img src="img/icons8-partilhar-144.png" alt="">
+          <h3>compartilhe essa ideia para outras pessoas</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+        </div>
+        
+      </div>
+    </section>
+
+
+    
+
+    
     <section>
         <h2 class="subTitulo">QUEM SOMOS?</h2>
 
