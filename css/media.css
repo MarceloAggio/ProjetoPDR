@@ -74,6 +74,12 @@
         width:100%;
     }
 
+    .text-side-somos h3{
+        font-size: 24px;
+        
+       
+    }
+
     .div-card{
         flex-direction: column;
 
