@@ -134,6 +134,9 @@
     margin-top: 25px;
 }
 
+
+/*como ajudar*/
+
 .section-ajudar h2{
    text-align: center;
    margin-top: 50px;
@@ -217,7 +220,7 @@
 .div-somos img{
     max-width: 500px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-   
+    border-radius: 8px;
 }
 
 .div-somos{
@@ -238,7 +241,7 @@
     content: ""; /* contéudo EM ESTILO criado antes do p com :before e :after .*/
     display: block; /* por padrão, o :before e :after é INLINE. então mudamos ele para BLOCK.*/
     width: 109px;
-    height: 6px;
+    height: 8px;
     background-color: rgba(238, 216, 15, 0.966);
     margin: -17px 0 ;
     position: absolute;
